@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Gaming Website</title>
+        <link rel="stylesheet" href="html.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header>
+            <a href="#" class="logo">Gammers</a>
+            <ul class="nav">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Games">Games</a></li>
+            </ul>
+            <div class="action">
+                <div class="searchBx">
+                    <a href="#"><i class='bx bx-search'></i></a>
+                    <input type="text" placeholder="Search Games" id="keyword" onkeyup="inputan()">
+                </div>
+            </div>
+            <div class="toggleMenu"></div>
+        </header>
+        <div class="banner" id="Home">
+            <div class="bg">
+                <div class="content">
+                    <h2>A New Home for <br> Game Lovers</h2>
+                    <p>Enjoy My Gaming Website and pick games you like</p>
+                    <a href="#" class="btn">Join Now</a>
+                </div>
+                <img src="../gambar/resident evil.jpg" alt="" class="logo">
+            </div>
+        </div>
+        <div class="about" id="About">
+            <div class="contentBx">
+                <h2>About Us</h2>
+                <p>Vennes and Anso Welcome to who visited our Website</p>
+                <a href="#">Read more</a>
+            </div>
+            <img src="../gambar/pubgg.png" alt="" class="logo2">
+        </div>
+        <div class="games" id="Games">
+            <h2>Popular Games</h2>
+            <ul>
+                <li class="list active" data-filter="all">All</li>
+                <li class="list" data-filter="pc">PC games</li>
+                <li class="list" data-filter="mobile">Android games</li>
+            </ul>
+            <div class="cardBx" id="gamelist2">
+                <div class="card" data-item="pc" id="pubg">
+                    <img src="../gambar/pubg.jpg">
+                    <div class="content">
+                        <h4 >PUBG STEAM</h4>
+                        <div class="progress-linee"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc" id="tomb">
+                    <img src="../gambar/tomb raider.jpg">
+                    <div class="content">
+                        <h4 >Tomb Raider</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$30</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc" id="valorant">
+                    <img src="../gambar/valorant.jfif" >
+                    <div class="content">
+                        <h4 >Valorant</h4>
+                        <div class="progress-lineee"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$12</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc" id="world">
+                    <img src="../gambar/world war z.jpg" >
+                    <div class="content">
+                        <h4 >World War Z</h4>
+                        <div class="progress-linee"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$15</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc"  id="far">
+                    <img src="../gambar/farcry5.jpeg">
+                    <div class="content">
+                        <h4 >Far Cry 5</h4>
+                        <div class="progress-lineee"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$25</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="mobile"  id="call">
+                    <img src="../gambar/cod.jpg">
+                    <div class="content">
+                        <h4 >Call of Duty Mobile</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$10</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="mobile" id="mobile">
+                    <img src="../gambar/ml.jfif" >
+                    <div class="content">
+                        <h4 >Mobile Legend</h4>
+                        <div class="progress-linee"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$15</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="mobile" id="clash">
+                    <img src="../gambar/coc.jpg" >
+                    <div class="content">
+                        <h4 >Clash of Clan</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$19</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="mobile" id="genshin">
+                    <img src="../gambar/genshin.jpg" >
+                    <div class="content">
+                        <h4 >Genshin Impact</h4>
+                        <div class="progress-lineee"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$8</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc" id="pointblank">
+                    <img src="../gambar/pointblank.png" >
+                    <div class="content">
+                        <h4 >Point Blank</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$3</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc" id="lostsaga">
+                    <img src="../gambar/lostsaga.png" >
+                    <div class="content">
+                        <h4 >Lost Saga</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$3</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc" id="fortnite">
+                    <img src="../gambar/fortnite.jpg" >
+                    <div class="content">
+                        <h4 >Fortnite</h4>
+                        <div class="progress-lineee"><span></span></div>
+                        <div class="info">
+                            <p>Price<br><span>$5</span></p>
+                            <a href="#">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('scroll',function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky',window.scrollY>0);                                         
+            });
+
+            let list=document.querySelectorAll('.list');
+            let card=document.querySelectorAll('.card');
+            for(let i=0;i<list.length;i++){
+                list[i].addEventListener('click',function(){
+                    for(let j=0;j<list.length;j++){
+                        list[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+
+                    let dataFilter = this.getAttribute('data-filter');
+                    
+                    for(let k=0;k<card.length;k++)
+                    {
+                        card[k].classList.remove('active');
+                        card[k].classList.add('hide');
+                        if(card[k].getAttribute('data-item')==dataFilter || dataFilter =='all'){
+                            card[k].classList.remove('hide');
+                            card[k].classList.add('active')
+                        }
+                    }
+                })
+            }
+            const inputan = () =>{
+                const cari= document.getElementById('keyword').value.toUpperCase();
+                const storeItem=document.getElementById('gamelist2');
+                const productgame=document.querySelectorAll('.card');
+                const gname=storeItem.getElementsByTagName("h4")
+
+                for (var i=0; i<gname.length;i++){
+                    let match=productgame[i].getElementsByTagName("h4")[0];
+
+                    if(match){
+                        let textvalue=match.textContent ||  match.innerHTML
+
+                        if(textvalue.toUpperCase().indexOf(cari)>-1){
+                            productgame[i].style.display="";
+                        }else{
+                            productgame[i].style.display="none";
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
